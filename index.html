@@ -38,6 +38,21 @@
         </div>
     </nav>
    </section>
-   <script src="dr7.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+  function displayValues(event) {
+    event.preventDefault();
+
+    var fname = document.getElementById('FirsName').value;
+    var lname = document.getElementById('LastName').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phno').value;
+
+    // Display values on the screen
+    var outputDiv = document.getElementById('output');
+    outputDiv.innerHTML = <p><strong>FirstName:</strong> ${fname}</p><p><strong>LastName:</strong> ${lname}</p><p><strong>Email:</strong> ${email}</p><p><strong>Phone Number:</strong> ${phone}</p>;
+  }
+</script>
 </body>
 </html>
